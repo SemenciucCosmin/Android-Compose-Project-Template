@@ -1,3 +1,6 @@
+import io.gitlab.arturbosch.detekt.extensions.DetektExtension.Companion.DEFAULT_SRC_DIR_JAVA
+import io.gitlab.arturbosch.detekt.extensions.DetektExtension.Companion.DEFAULT_SRC_DIR_KOTLIN
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.detekt)
@@ -92,4 +95,17 @@ dependencies {
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
     androidTestImplementation(libs.androidx.room.testing)
+}
+
+detekt {
+    source.setFrom(
+        DEFAULT_SRC_DIR_JAVA,
+        DEFAULT_SRC_DIR_KOTLIN,
+    )
+
+    buildUponDefaultConfig = true
+    parallel = true
+    autoCorrect = true
+    config.setFrom("detekt/detekt-config.yml")
+    baseline = file("detekt/detekt-baseline.xml")
 }

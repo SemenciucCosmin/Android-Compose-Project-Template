@@ -113,8 +113,8 @@ dependencies {
 
     // MODULES
     implementation(projects.initializer)
-    implementation(projects.ui.catalog)
     implementation(projects.ui.core)
+    implementation(projects.ui.theme)
 }
 
 detekt {
@@ -123,10 +123,10 @@ detekt {
         DEFAULT_SRC_DIR_KOTLIN,
         "${project.rootDir}/initializer/$DEFAULT_SRC_DIR_JAVA",
         "${project.rootDir}/initializer/$DEFAULT_SRC_DIR_KOTLIN",
-        "${project.rootDir}/ui/catalog/$DEFAULT_SRC_DIR_JAVA",
-        "${project.rootDir}/ui/catalog/$DEFAULT_SRC_DIR_KOTLIN",
         "${project.rootDir}/ui/core/$DEFAULT_SRC_DIR_JAVA",
         "${project.rootDir}/ui/core/$DEFAULT_SRC_DIR_KOTLIN",
+        "${project.rootDir}/ui/theme/$DEFAULT_SRC_DIR_JAVA",
+        "${project.rootDir}/ui/theme/$DEFAULT_SRC_DIR_KOTLIN",
     )
 
     buildUponDefaultConfig = true

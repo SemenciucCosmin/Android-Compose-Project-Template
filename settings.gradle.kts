@@ -25,6 +25,6 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(
     ":app",
     ":initializer",
-    ":ui:catalog",
     ":ui:core",
+    ":ui:theme",
 )

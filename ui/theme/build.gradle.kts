@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ui.catalog"
+    namespace = "com.example.ui.theme"
     compileSdk {
         version = release(libs.versions.compileSdk.get().toInt()) {
             minorApiLevel = 1

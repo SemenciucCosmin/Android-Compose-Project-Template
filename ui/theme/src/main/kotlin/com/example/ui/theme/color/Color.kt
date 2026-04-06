@@ -1,4 +1,4 @@
-package com.example.androidcomposeprojecttemplate.ui.theme
+package com.example.ui.theme.color
 
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme

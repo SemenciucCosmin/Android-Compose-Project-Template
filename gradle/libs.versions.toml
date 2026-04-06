@@ -8,6 +8,7 @@ targetSdk = "36"
 # ANDROIDX
 core-ktx = "1.18.0"
 lifecycle-runtime-ktx = "2.10.0"
+startup-runtime = "1.2.0"
 
 # COIL
 coil = "3.4.0"
@@ -58,6 +59,7 @@ turbine = "1.2.1"
 # ANDROIDX
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startup-runtime" }
 
 # COMPOSE
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }

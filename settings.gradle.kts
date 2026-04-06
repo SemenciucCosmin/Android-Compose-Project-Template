@@ -21,5 +21,10 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AndroidComposeProjectTemplate"
-include(":app")
- 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+include(
+    ":app",
+    ":di",
+    ":initializer",
+    ":ui:catalog"
+)

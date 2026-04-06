@@ -24,7 +24,6 @@ rootProject.name = "AndroidComposeProjectTemplate"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(
     ":app",
-    ":di",
     ":initializer",
     ":ui:catalog",
     ":ui:core",

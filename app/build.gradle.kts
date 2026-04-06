@@ -112,7 +112,6 @@ dependencies {
     implementation(libs.androidx.startup.runtime)
 
     // MODULES
-    implementation(projects.di)
     implementation(projects.initializer)
     implementation(projects.ui.catalog)
     implementation(projects.ui.core)
@@ -122,8 +121,6 @@ detekt {
     source.setFrom(
         DEFAULT_SRC_DIR_JAVA,
         DEFAULT_SRC_DIR_KOTLIN,
-        "${project.rootDir}/di/$DEFAULT_SRC_DIR_JAVA",
-        "${project.rootDir}/di/$DEFAULT_SRC_DIR_KOTLIN",
         "${project.rootDir}/initializer/$DEFAULT_SRC_DIR_JAVA",
         "${project.rootDir}/initializer/$DEFAULT_SRC_DIR_KOTLIN",
         "${project.rootDir}/ui/catalog/$DEFAULT_SRC_DIR_JAVA",

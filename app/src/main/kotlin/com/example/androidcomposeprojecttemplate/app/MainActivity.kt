@@ -1,4 +1,4 @@
-package com.example.androidcomposeprojecttemplate
+package com.example.androidcomposeprojecttemplate.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

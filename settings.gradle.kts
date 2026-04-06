@@ -26,5 +26,6 @@ include(
     ":app",
     ":di",
     ":initializer",
-    ":ui:catalog"
+    ":ui:catalog",
+    ":ui:core",
 )
